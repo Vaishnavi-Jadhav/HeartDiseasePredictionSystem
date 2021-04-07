@@ -120,6 +120,13 @@
                                   <input type="button" class="btn btn-primary" value="Reset All Sliders" onclick="updateOne(val01,-1)"/>
                               </td>
                           </tr>
+                          <tr>
+                            <td></td>
+                            <td class="input_slider">
+                              <input type="button" class="btn btn-primary" value="Download Report"
+                                onclick="take_screenshot()" />
+                            </td>
+                          </tr>
                       </table>
                   </div>
                   <div class="child2">
@@ -285,6 +292,9 @@
                               b = 0;
 
                               return "rgb(" + r + "," + g + "," + b + ")";
+                          }
+                        function take_screenshot(){
+                            window.print();
                           }
                       </script>
                   </div>
